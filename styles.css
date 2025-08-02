@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px 25px;
+  background: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  color: #ff6f91;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.carta {
+  display: none;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+.galeria-title {
+  margin-top: 60px;
+  font-size: 2em;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  object-fit: cover;
+}
+
+.final-btn {
+  margin-top: 50px;
+  font-size: 1.2em;
+  background: #fff;
+  color: #e91e63;
+}
+
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.ibb.co/Mg9D3vq/heart.png');
+  background-repeat: repeat;
+  background-size: 30px;
+  opacity: 0.1;
+  animation: float 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes float {
+  from { background-position: 0 0; }
+  to { background-position: 0 1000px; }
+}
+
+.respuestas {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.respuestas button {
+  background-color: white;
+  color: #ff4081;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.musica-btn {
+  margin-top: 20px;
+  background: #fff;
+  color: #ba68c8;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.musica-btn:hover {
+  background-color: #f3e5f5;
+  transform: scale(1.05);
+}
